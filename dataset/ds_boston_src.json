@@ -2,7 +2,7 @@
 	"name": "ds_boston_src",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "blobanalyzeboston",
+			"referenceName": "blobBoston",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

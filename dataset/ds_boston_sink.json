@@ -2,7 +2,7 @@
 	"name": "ds_boston_sink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "datalakeanalyzeboston",
+			"referenceName": "datalakeBoston",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
