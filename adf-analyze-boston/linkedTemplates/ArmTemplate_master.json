@@ -15,7 +15,19 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'datalakeanalyzeboston'"
 		},
+		"blobBoston_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'blobBoston'"
+		},
+		"datalakeBoston_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'datalakeBoston'"
+		},
 		"datalakeanalyzeboston_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://datalakeanalyzeboston.dfs.core.windows.net/"
+		},
+		"datalakeBoston_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://datalakeanalyzeboston.dfs.core.windows.net/"
 		},
@@ -52,8 +64,17 @@
 					"datalakeanalyzeboston_accountKey": {
 						"value": "[parameters('datalakeanalyzeboston_accountKey')]"
 					},
+					"blobBoston_connectionString": {
+						"value": "[parameters('blobBoston_connectionString')]"
+					},
+					"datalakeBoston_accountKey": {
+						"value": "[parameters('datalakeBoston_accountKey')]"
+					},
 					"datalakeanalyzeboston_properties_typeProperties_url": {
 						"value": "[parameters('datalakeanalyzeboston_properties_typeProperties_url')]"
+					},
+					"datalakeBoston_properties_typeProperties_url": {
+						"value": "[parameters('datalakeBoston_properties_typeProperties_url')]"
 					}
 				}
 			},

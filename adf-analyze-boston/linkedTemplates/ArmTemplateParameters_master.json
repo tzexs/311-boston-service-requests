@@ -11,7 +11,16 @@
 		"datalakeanalyzeboston_accountKey": {
 			"value": ""
 		},
+		"blobBoston_connectionString": {
+			"value": ""
+		},
+		"datalakeBoston_accountKey": {
+			"value": ""
+		},
 		"datalakeanalyzeboston_properties_typeProperties_url": {
+			"value": "https://datalakeanalyzeboston.dfs.core.windows.net/"
+		},
+		"datalakeBoston_properties_typeProperties_url": {
 			"value": "https://datalakeanalyzeboston.dfs.core.windows.net/"
 		},
 		"containerUri": {

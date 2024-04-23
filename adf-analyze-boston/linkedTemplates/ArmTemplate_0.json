@@ -15,7 +15,19 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'datalakeanalyzeboston'"
 		},
+		"blobBoston_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'blobBoston'"
+		},
+		"datalakeBoston_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'datalakeBoston'"
+		},
 		"datalakeanalyzeboston_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://datalakeanalyzeboston.dfs.core.windows.net/"
+		},
+		"datalakeBoston_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://datalakeanalyzeboston.dfs.core.windows.net/"
 		}
@@ -55,12 +67,42 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/blobBoston')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('blobBoston_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/datalakeBoston')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('datalakeBoston_properties_typeProperties_url')]",
+					"accountKey": {
+						"type": "SecureString",
+						"value": "[parameters('datalakeBoston_accountKey')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/ds_boston_sink')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "datalakeanalyzeboston",
+					"referenceName": "datalakeBoston",
 					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
@@ -79,7 +121,7 @@
 				"schema": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/datalakeanalyzeboston')]"
+				"[concat(variables('factoryId'), '/linkedServices/datalakeBoston')]"
 			]
 		},
 		{
@@ -88,7 +130,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "blobanalyzeboston",
+					"referenceName": "blobBoston",
 					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
@@ -113,7 +155,7 @@
 				]
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/blobanalyzeboston')]"
+				"[concat(variables('factoryId'), '/linkedServices/blobBoston')]"
 			]
 		},
 		{
@@ -189,6 +231,11 @@
 				],
 				"policy": {
 					"elapsedTimeMetric": {}
+				},
+				"variables": {
+					"storage_blob_name": {
+						"type": "String"
+					}
 				},
 				"annotations": []
 			},
