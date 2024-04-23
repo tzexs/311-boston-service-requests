@@ -15,7 +15,7 @@
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Week",
-				"interval": 1,
+				"interval": 2,
 				"startTime": "2024-04-23T03:57:00",
 				"timeZone": "E. South America Standard Time"
 			}
