@@ -1,0 +1,9 @@
+{
+	"name": "adf-analyze-boston",
+	"location": "brazilsouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b9d858ab-3482-4744-9ce2-2fe6673de272",
+		"tenantId": "e916a6a6-00bd-4f1b-b46b-6dc0ea6c12bb"
+	}
+}
