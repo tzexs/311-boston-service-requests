@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.9.9" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>311 Service Requests - 311 SERVICE REQUESTS - 2017 - Analyze Boston</title>
+
+    
+    
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    
+    
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SN37V63W2V"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+
+ gtag('set', 'linker', );
+ gtag('js', new Date());
+
+ gtag('config', 'G-SN37V63W2V', {
+     anonymize_ip: true,
+     linker: {
+         domains: []
+     }
+ });
+</script>
+    
+
+  
+    
+    
+  
+  
+    
+      
+      
+      
+    
+    
+    
+
+
+  
+  
+  
+
+  
+
+
+    
+    
+
+
+
+    
+    
+
+  <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
+
+  
+  
+
+
+    
+      
+      
+    
+  
+  <meta property="og:title" content="311 Service Requests - 311 SERVICE REQUESTS - 2017 - Analyze Boston">
+  <meta property="og:description" content="This data set includes all channels of engagement in which a service request is created.
+Refer to this link to learn more about BOS:311: https://www.cityofboston.gov/311/">
+
+  
+  <meta property="og:url" content="https://data.boston.gov/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="311 Service Requests - 311 SERVICE REQUESTS - 2017 - Analyze Boston" />
+  <meta name="twitter:description" content="This data set includes all channels of engagement in which a service request is created.
+Refer to this link to learn more about BOS:311: https://www.cityofboston.gov/311/" />
+
+
+    
+    <link href="/webassets/base/2471d0b8_main.css" rel="stylesheet"/>
+<link href="/webassets/vendor/f3b8236b_select2.css" rel="stylesheet"/>
+<link href="/webassets/vendor/0b01aef1_font-awesome.css" rel="stylesheet"/>
+<link href="/webassets/opengov_custom_theme_resource/799faa9c_main.css" rel="stylesheet"/>
+<link href="/webassets/bostonma_theme_resource/01737bde_main.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-scheming/2deda21a_scheming_css.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-harvest/c95a0af2_harvest_css.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-geoview/77c3ca23_geo-resource-styles.css" rel="stylesheet"/>
+    <style>
+        body {
+  font-size: 16px;
+}
+.tint {
+  background-color: rgba(40,139,228,0.6) !important;
+}
+.main-featured {
+  order: 1;
+}
+.main-browse {
+  order: 2;
+}
+.featured-charts-wrap {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.dataset-item-extra {
+  margin-left: 120px;
+}
+.format-label {
+  background: url(https://bostonma.ogopendata.com/base/images/sprite-resource-icons.png) no-repeat 0 0;
+}
+      </style>
+    <style>
+
+ .account-masthead {background: #ffffff}
+ .account-masthead .account ul li a:hover {background: #288be4}
+ .account-masthead .account ul li a {color: #091f2f}
+ .masthead {background: #ffffff}
+ .masthead .navigation .nav-pills li a:hover,.masthead .navigation .nav-pills li a:focus,.masthead .navigation .nav-pills li.active a,.navbar-toggle {background-color: #288be4}
+ .navbar .nav>li>a,.masthead .nav>li>a,.navbar .navbar-left>h1>a,.navbar .navbar-left>h2 {color: #091f2f}
+ .module-heading {background: #091f2f}
+ .module-heading,.module-heading .action {color: #ffffff}
+ body, .site-footer, .footer-column-form .cke_reset {background: #091f2f}
+ .site-footer a,.site-footer a:hover,.footer-column-form .cke_reset a {color: #51acff}
+ .site-footer,.site-footer label,.site-footer small,.footer-column-form .cke_reset {color: #ffffff}</style>
+
+  </head>
+
+  
+  <body data-site-root="https://data.boston.gov/" data-locale-root="https://data.boston.gov/" >
+
+    <input type="checkbox" id="hb__trigger" class="hb__trigger" aria-hidden="true">
+<div class="main-navigation">
+  <div class="main-navigation-title"></div>
+    <div class="region region-navigation">
+      <ul class="menu list-unstyled unstyled">
+      <li class="menu__item is-leaf first leaf secondary-menu-item">
+        <a href="/" class="menu__link">Home</a>
+      </li>
+      <li class="menu__item is-leaf first leaf secondary-menu-item">
+        <a href="https://www.boston.gov/" class="menu__link" target="_blank">Boston.gov</a>
+      </li>
+
+      <div class="side-nav-account">
+        
+          
+            
+              <nav class="account not-authed">
+                <ul class="list-unstyled unstyled">
+                  
+                    <li><a href="/user/login">Log in</a></li>
+                    
+                      <li><a class="sub" href="/user/register">Register</a></li>
+                    
+                  
+                </ul>
+              </nav>
+            
+          
+        
+      </div>
+      <li class="menu__item is-leaf first leaf secondary-menu-item">
+        <a href="/showcase" class="menu__link">Showcases</a>
+      </li>
+      <li class="menu__item is-leaf first leaf secondary-menu-item">
+        <a href="https://www.boston.gov/news?title=&field_contact_target_id%5B%5D=1691&field_published_date_value%5Bmin%5D%5Bdate%5D=&field_published_date_value%5Bmax%5D%5Bdate%5D=" class="menu__link" target="_blank">News</a>
+      </li>
+      <li class="menu__item is-leaf first leaf secondary-menu-item">
+        <a href="/dataset/" class="menu__link">Datasets</a>
+      </li>
+      <li class="menu__item is-leaf leaf secondary-menu-item">
+        <a href="/organization/" class="menu__link">Organizations</a>
+      </li>
+      <li class="menu__item is-leaf leaf secondary-menu-item">
+        <a href="/group/" class="menu__link">Topics</a>
+      </li>
+      <li class="menu__item is-leaf leaf secondary-menu-item">
+        <a href="/pages/ckan-training-videos">Tips for Users</a>
+      </li>
+      <li class="menu__item is-leaf leaf secondary-menu-item">
+        <a href="/about" class="menu__link">About</a>
+      </li>
+      <li class="menu__item is-leaf leaf secondary-menu-item">
+        <a href="/contact" class="menu__link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="page" id="page">
+  
+    
+    <div class="sr-only sr-only-focusable"><a href="#content">Skip to content</a></div>
+  
+  
+    
+<header class="navbar navbar-static-top masthead compressed">
+  
+      
+  
+  <div class="container">
+    
+    <label tabindex="0" for="hb__trigger" class="nav-trigger" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
+        <div class="hb">
+            <span class="hb__box">
+                <span class="hb__inner"></span>
+            </span>
+            <span class="hb__label">Menu</span>
+        </div>
+    </label>
+    <div class="header-image navbar-left">
+      
+         
+      <a class="logo" href="/"><img src="/uploads/admin/2023-12-21-011527.972995AnalyzeBostonlogo.png" alt="Analyze Boston" title="Analyze Boston" /></a>
+       
+      
+    </div>
+    <a href="https://www.boston.gov/" title="boston-site" rel="boston-site" target="_blank" class="s">
+      <img src="/img/Digital_City_Seal.svg" alt="City of Boston Seal" class="s-i" data-pin-nopin="true">
+    </a>
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button" aria-label="expand or collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="main-navigation-toggle">
+      
+        <div class="account-masthead">
+          
+            
+              <nav class="account not-authed" aria-label="Account">
+                <ul class="list-unstyled unstyled">
+                  
+                    <li><a href="/user/login">Log in</a></li>
+                    
+                      <li><a class="sub" href="/user/register">Sign up</a></li>
+                    
+                  
+                </ul>
+              </nav>
+            
+          
+        </div>
+      
+      
+        <nav class="section navigation">
+          <ul class="nav nav-pills">
+            
+              <li><a href="/dataset/">Datasets</a></li>
+              <li>
+                <a href="https://www.boston.gov/news" title="news" target="_blank">News</a>
+              </li>
+              <li>
+                <a href="/pages/ckan-training-videos">Tips</a>
+              </li>
+            
+          </ul>
+        </nav>
+      
+    </div>
+  </div>
+</header>
+
+  
+    
+    <div class="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar" role="navigation" aria-label="Breadcrumb">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="/" aria-label="Home"><i class="fa fa-home"></i><span> Home</span></a></li>
+                    
+  
+  
+    
+    
+      
+      <li><a href="/organization/">Organizations</a></li>
+      <li><a href="/organization/boston-311-org">Boston 311</a></li>
+    
+    <li><a href="/dataset/311-service-requests">311 Service Requests</a></li>
+  
+
+  <li class="active"><a href="">311 SERVICE REQUESTS - 2017</a></li>
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+            
+            
+  
+    <section class="module module-resource" role="complementary">
+      
+      <div class="module-content">
+        <div class="actions">
+          
+          <ul>
+            
+  
+  
+  
+            
+            
+              <li>
+                <div class="btn-group">
+                <a class="btn btn-primary resource-url-analytics resource-type-None" href="https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/30022137-709d-465e-baae-ca155b51927d/download/tmpzccn8u4q.csv">
+                  
+                    <i class="fa fa-arrow-circle-o-down"></i> Download
+                  
+                </a>
+                
+                  
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                  </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/datastore/dump/30022137-709d-465e-baae-ca155b51927d?bom=True"
+                      target="_blank"><span>CSV</span></a>
+                    <a href="/datastore/dump/30022137-709d-465e-baae-ca155b51927d?format=tsv&amp;bom=True"
+                      target="_blank"><span>TSV</span></a>
+                    <a href="/datastore/dump/30022137-709d-465e-baae-ca155b51927d?format=json"
+                      target="_blank"><span>JSON</span></a>
+                    <a href="/datastore/dump/30022137-709d-465e-baae-ca155b51927d?format=xml"
+                      target="_blank"><span>XML</span></a>
+                  </li>
+                </ul>
+                  
+                
+                </div>
+              </li>
+            
+            
+  
+    <li>
+
+  
+  
+  <a class="btn btn-success" href="/api/1/util/snippet/api_info.html?resource_id=30022137-709d-465e-baae-ca155b51927d" data-module="api-info" data-module-template="/api/1/util/snippet/api_info.html?resource_id=30022137-709d-465e-baae-ca155b51927d" data-loading-text="Loading..."><i class="fa fa-flask fa-lg"></i> Data API</a>
+</li>
+  
+
+
+          </ul>
+          
+        </div>
+        
+          
+            
+          
+          <h1 class="page-heading">311 SERVICE REQUESTS - 2017</h1>
+          
+            
+              <p class="text-muted ellipsis">URL: <a class="resource-url-analytics" href="https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/30022137-709d-465e-baae-ca155b51927d/download/tmpzccn8u4q.csv" title="https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/30022137-709d-465e-baae-ca155b51927d/download/tmpzccn8u4q.csv">https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/30022137-709d-465e-baae-ca155b51927d/download/tmpzccn8u4q.csv</a></p>
+            
+          
+          <div class="prose notes" property="rdfs:label">
+            
+            
+              <h3>Dataset description:</h3>
+              <blockquote>This data set includes all channels of engagement in which a service request is created.
+Refer to this link to learn more about BOS:311: https://www.cityofboston.gov/311/</blockquote>
+              <p>Source: <a href="/dataset/311-service-requests">311 Service Requests</a>
+            
+          </div>
+        
+      
+      
+      
+        
+          
+          
+
+
+
+
+
+
+  <ul class="nav nav-tabs nav-tabs nav-tabs-plain" >
+    
+
+    
+    
+      
+      
+
+
+  
+  
+    
+  
+
+
+<li class="active view_item" data-id="44cf4b04-d5cc-464b-b906-26ddb3456ef2">
+  <a href="/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d?view_id=44cf4b04-d5cc-464b-b906-26ddb3456ef2" data-id="44cf4b04-d5cc-464b-b906-26ddb3456ef2">
+    <i class="icon-table fa fa-table"></i>
+    Data Table
+  </a>
+</li>
+    
+
+    
+  </ul>
+
+        
+          
+            <div class="resource-view">
+              
+              
+              
+                
+                  
+                    
+                      
+
+
+  <div id="view-44cf4b04-d5cc-464b-b906-26ddb3456ef2" class="resource-view" data-id="44cf4b04-d5cc-464b-b906-26ddb3456ef2" data-title="Data Table" data-description="">
+  <div class="actions">
+    <a class="btn btn-default"
+       target="_blank"
+       href="https://data.boston.gov/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d/view/44cf4b04-d5cc-464b-b906-26ddb3456ef2">
+      <i class="fa fa-arrows-alt"></i>
+      Fullscreen
+    </a>
+    <a class="btn btn-default"
+       href="#embed-44cf4b04-d5cc-464b-b906-26ddb3456ef2"
+       data-module="resource-view-embed"
+       data-module-id="44cf4b04-d5cc-464b-b906-26ddb3456ef2"
+       data-module-url="https://data.boston.gov/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d/view/44cf4b04-d5cc-464b-b906-26ddb3456ef2">
+      <i class="fa fa-code"></i>
+      Embed
+    </a>
+  </div>
+  <p class="desc"></p>
+    <div class="m-top ckanext-datapreview">
+      
+        
+<div
+  class="resource-view-filters"
+  data-module="resource-view-filters"
+  data-module-resource-id="30022137-709d-465e-baae-ca155b51927d"
+  data-module-fields="[&#34;_id&#34;, &#34;case_enquiry_id&#34;, &#34;case_status&#34;, &#34;case_title&#34;, &#34;city_council_district&#34;, &#34;closed_dt&#34;, &#34;closed_photo&#34;, &#34;closure_reason&#34;, &#34;department&#34;, &#34;fire_district&#34;, &#34;geom_4326&#34;, &#34;latitude&#34;, &#34;location&#34;, &#34;location_street_name&#34;, &#34;location_zipcode&#34;, &#34;longitude&#34;, &#34;neighborhood&#34;, &#34;neighborhood_services_district&#34;, &#34;on_time&#34;, &#34;open_dt&#34;, &#34;police_district&#34;, &#34;precinct&#34;, &#34;pwd_district&#34;, &#34;queue&#34;, &#34;reason&#34;, &#34;sla_target_dt&#34;, &#34;source&#34;, &#34;subject&#34;, &#34;submitted_photo&#34;, &#34;type&#34;, &#34;ward&#34;]"
+  >
+</div>
+      
+      
+        <div class="data-viewer-error js-hide">
+          <p class="text-danger">
+            <i class="fa fa-info-circle"></i>
+            This resource view is not available at the moment.
+            <a href="#" data-toggle="collapse" data-target="#data-view-error">
+              Click here for more information.
+            </a>
+          </p>
+          <p id="data-view-error" class="collapse"></p>
+          <p>
+            <a href="https://data.boston.gov/dataset/8048697b-ad64-4bfc-b090-ee00169f2323/resource/30022137-709d-465e-baae-ca155b51927d/download/tmpzccn8u4q.csv" class="btn btn-default btn-lg resource-url-analytics" target="_blank">
+              <i class="fa fa-lg fa-arrow-circle-o-down"></i>
+              Download resource
+            </a>
+          </p>
+        </div>
+        
+          
+          
+            
+          
+        
+        <iframe src="https://data.boston.gov/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d/view/44cf4b04-d5cc-464b-b906-26ddb3456ef2" frameborder="0" width="100%" data-module="data-viewer">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      
+    </div>
+    <div id="embed-44cf4b04-d5cc-464b-b906-26ddb3456ef2" class="modal fade resource-view-embed">
+      <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Embed resource view</h3>
+      </div>
+      <div class="modal-body">
+        <p class="embed-content">You can copy and paste the embed code into a CMS or blog software that supports raw HTML</p>
+        <div class="row">
+          <div class="col-md-6">
+            
+  <div class="form-group control-full">
+  <label class="control-label" for="width">Width</label>
+  <div class="controls ">
+  
+<input id="width" type="text" name="width" value="700" placeholder=""  class="form-control" />
+
+  
+  
+  </div>
+  </div>
+  
+
+          </div>
+          <div class="col-md-6">
+            
+  <div class="form-group control-full">
+  <label class="control-label" for="height">Height</label>
+  <div class="controls ">
+  
+<input id="height" type="text" name="height" value="400" placeholder=""  class="form-control" />
+
+  
+  
+  </div>
+  </div>
+  
+
+          </div>
+        </div>
+        
+  
+  
+  <div class="form-group pre control-full">
+  <label class="control-label" for="code">Code</label>
+  <div class="controls ">
+  
+  <textarea id="code" name="code" cols="20" rows="3" placeholder=""  class="form-control"></textarea>
+  
+  
+  
+  </div>
+  </div>
+  
+  
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+                    
+                  
+                
+              
+            </div>
+          
+        </div>
+      
+      
+      
+      
+    </section>
+  
+
+
+            
+              <aside class="secondary col-sm-3">
+                
+                
+  
+    
+
+
+  
+    <section class="module module-narrow resources">
+      
+        
+          <h2 class="module-heading"><i class="fa fa-files-o"></i> Resources</h2>
+        
+        
+          <ul class="list-unstyled nav nav-simple">
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/b237f352-49d1-4423-804f-b478e4f24e61?inner_span=True">CRM Value Codex</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/dff4d804-5031-443a-8409-8344efd0e5c8?inner_span=True">311 Service Requests - 2024</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/e6013a93-1321-4f2a-bf91-8d8a02f1e62f?inner_span=True">311 Service Requests - 2023</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/81a7b022-f8fc-4da5-80e4-b160058ca207?inner_span=True">311 SERVICE REQUESTS - 2022</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/f53ebccd-bc61-49f9-83db-625f209c95f5?inner_span=True">311 SERVICE REQUESTS - 2021</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/6ff6a6fd-3141-4440-a880-6f60a37fe789?inner_span=True">311 SERVICE REQUESTS - 2020</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/ea2e4696-4a2d-429c-9807-d02eb92e0222?inner_span=True">311 SERVICE REQUESTS - 2019</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/2be28d90-3a90-4af1-a3f6-f28c1e25880a?inner_span=True">311 SERVICE REQUESTS - 2018</a>
+              </li>
+            
+              <li class="nav-item active">
+                <a href="/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d?inner_span=True">311 SERVICE REQUESTS - 2017</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/b7ea6b1b-3ca4-4c5b-9713-6dc1db52379a?inner_span=True">311 SERVICE REQUESTS - 2016</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/c9509ab4-6f6d-4b97-979a-0cf2a10c922b?inner_span=True">311 SERVICE REQUESTS - 2015</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/bdae89c8-d4ce-40e9-a6e1-a5203953a2e0?inner_span=True">311 SERVICE REQUESTS - 2014</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/407c5cd0-f764-4a41-adf8-054ff535049e?inner_span=True">311 SERVICE REQUESTS - 2013</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/382e10d9-1864-40ba-bef6-4eea3c75463c?inner_span=True">311 SERVICE REQUESTS - 2012</a>
+              </li>
+            
+              <li class="nav-item">
+                <a href="/dataset/311-service-requests/resource/94b499d9-712a-4d2a-b790-7ceec5c9c4b1?inner_span=True">311 SERVICE REQUESTS - 2011</a>
+              </li>
+            
+          </ul>
+        
+      
+    </section>
+  
+
+  
+
+              </aside>
+            
+
+            
+              <div class="primary col-sm-9 col-xs-12" role="main">
+                
+                
+  
+  
+    
+    
+  
+  
+    <section class="module">
+      
+  <div class="module-content">
+    <h2>Current Resource Info</h2>
+    <table class="table table-striped table-bordered table-condensed" data-module="table-toggle-more">
+
+      <tbody><tr>
+            <th scope="row">Last updated</th>
+            <td>September 8, 2023</td>
+          </tr><tr>
+            <th scope="row">Created</th>
+            <td>December 24, 2019</td>
+          </tr><tr>
+            <th scope="row">Format</th>
+            <td>CSV</td>
+          </tr><tr>
+            <th scope="row">License</th>
+            <td>
+
+
+  
+    
+  
+    <a href="http://www.opendefinition.org/licenses/odc-pddl" rel="dc:rights">Open Data Commons Public Domain Dedication and License (PDDL)</a>
+  
+
+  
+</td>
+          </tr></tbody>
+    </table>
+  </div>
+
+    </section>
+  
+
+
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+  
+    
+      <footer class="site-footer">
+  <div class="container">
+    
+  <div class="row">
+    
+      <div class="col-md-3 span3 footer-links">
+        <ul class="list-unstyled">
+	<li><a href="/about">About Analyze Boston</a></li>
+	<li><a href="https://www.boston.gov/departments/mayors-office/michelle-wu" target="_blank" title="Michelle Wu is the Mayor of Boston ">Mayor Michelle Wu</a></li>
+	<li><a href="/docs/api/index.html" target="_blank">API Documentation</a></li>
+	<li><a href="https://www.boston.gov/departments/analytics-team" target="_blank">Analytics Team</a></li>
+	<li><a href="https://www.boston.gov/departments/innovation-and-technology" target="_blank">DoIT</a></li>
+</ul>
+
+      </div>
+    
+      <div class="col-md-3 span3 footer-links">
+        <ul class="list-unstyled">
+	<li><a href="/pages/ckan-training-videos">Tips for Users</a></li>
+	<li><a class="menu__link" href="http://www.cityofboston.gov/copyright/privacyandsecurity.asp" target="_blank" title="">Privacy Policy</a></li>
+	<li><a href="/pages/glossary">Glossary</a></li>
+	<li><a href="/contact">General Inquiries</a></li>
+	<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdOvF55BUFHSI92diqvb-uv0Sbi3VJJcLhNMW4FxFz_Du_ABg/viewform" target="_blank">Help &amp; Feedback</a></li>
+</ul>
+
+      </div>
+    
+    <div class="col-md-4 span4 footer-links">
+      <form id = "foot-letter" action="https://contactform.boston.gov/subscriptions?list=101" method="POST" class="bos-newsletter" novalidate="" target="_blank">
+        <div class="fs">
+          <div class="fs-c">
+            <div class="txt">
+              <p id = "newsletter">SIGN UP FOR OUR NEWSLETTER! </p>
+              <input name="subscriber[email]" type="email" value="" placeholder="Email address" class="txt-f bos-newsletter-email" id="signupEmail">
+            </div>
+            <div class="txt">
+              <input name="subscriber[zipcode]" type="text" value="" placeholder="Zip Code" class="txt-f bos-newsletter-zip" size="10" id="signupZip">
+            </div>
+          </div>
+          <p class="t--subinfo t--err m-t100"></p>
+          <div class="bc bc--r">
+            <button type="submit" class="btn btn-primary btn-small">Sign Up</button>
+          </div>
+        </div>
+      </form>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript"> 
+        function formValidate(){
+          var checkEmailFormat = /^[A-Z0-9_'%=+!`#~$*?^{}&|-]+([\.][A-Z0-9_'%=+!`#~$*?^{}&|-]+)*@[A-Z0-9-]+(\.[A-Z0-9-]+)+$/i;
+          var checkZipFormat = /^\d{5,5}$/;
+          if ($("#signupEmail").val() == '' && $("#signupZip").val() == '' ) {
+              $('.t--subinfo.t--err').html('Email and Zip Code are blank.');
+          }
+          else if (!checkEmailFormat.test($("#signupEmail").val()) ) {
+              $('.t--subinfo.t--err').html('Email value is invalid.');
+          }
+          else if (!checkZipFormat.test($("#signupZip").val()) ) {
+              $('.t--subinfo.t--err').html('Zip Code value is invalid.');
+          }
+          else{
+            formSubmit();
+          }
+        }
+        function formSubmit(){
+          const form = $("#foot-letter");
+          const url = form.attr('action');
+          $.ajax({
+              type: "POST",
+              url: url,
+              crossDomain: true,
+              data: form.serialize(), // serializes the form's elements.
+          })
+          .done(function(res){
+                const successMessage = "<div class='t--info'>Great. You'll get your first email soon.</div>" 
+                $('#foot-letter').html(successMessage);
+          })
+          .fail(function(res){
+                $('.t--subinfo.t--err').html('There was an error. Please try again.');
+          });
+        }         
+        $("#foot-letter").submit(function(e) {
+          e.preventDefault(); // avoid to execute the actual submit of the form.
+          formValidate();
+        });     
+      </script>
+    </div>
+    <div class="attribution og-attribution">
+      
+        <strong>Powered by</strong>
+        <div class="og-links">
+          <a class="pull-left" href="https://opengov.com/?utm_campaign=Footer-Product-OpenData&utm_source=OpenGov&utm_medium=product&utm_term=PO-OGOV-1274&utm_content=logo" target="_blank">
+            <img src="/img/OpenGov_Logo.png" alt="OpenGov" height="25">
+          </a>
+          <a class="hide-text ckan-footer-logo pull-right" href="https://ckan.org" target="_blank">CKAN</a>
+        </div>
+      
+      
+        
+<form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
+  <label for="field-lang-select">Language</label>
+  <select id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+    
+      <option value="/en/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" selected="selected">
+        English
+      </option>
+    
+      <option value="/pt_BR/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        português (Brasil)
+      </option>
+    
+      <option value="/ja/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        日本語
+      </option>
+    
+      <option value="/it/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        italiano
+      </option>
+    
+      <option value="/cs_CZ/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        čeština (Česko)
+      </option>
+    
+      <option value="/ca/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        català
+      </option>
+    
+      <option value="/es/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        español
+      </option>
+    
+      <option value="/fr/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        français
+      </option>
+    
+      <option value="/el/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        Ελληνικά
+      </option>
+    
+      <option value="/sv/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        svenska
+      </option>
+    
+      <option value="/sr/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        српски
+      </option>
+    
+      <option value="/no/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        norsk bokmål (Norge)
+      </option>
+    
+      <option value="/sk/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        slovenčina
+      </option>
+    
+      <option value="/fi/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        suomi
+      </option>
+    
+      <option value="/ru/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        русский
+      </option>
+    
+      <option value="/de/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        Deutsch
+      </option>
+    
+      <option value="/pl/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        polski
+      </option>
+    
+      <option value="/nl/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        Nederlands
+      </option>
+    
+      <option value="/bg/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        български
+      </option>
+    
+      <option value="/ko_KR/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        한국어 (대한민국)
+      </option>
+    
+      <option value="/hu/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        magyar
+      </option>
+    
+      <option value="/sl/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        slovenščina
+      </option>
+    
+      <option value="/lv/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        latviešu
+      </option>
+    
+      <option value="/am/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        አማርኛ
+      </option>
+    
+      <option value="/ar/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        العربية
+      </option>
+    
+      <option value="/bs/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        bosanski
+      </option>
+    
+      <option value="/da_DK/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        dansk (Danmark)
+      </option>
+    
+      <option value="/en_AU/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        English (Australia)
+      </option>
+    
+      <option value="/es_AR/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        español (Argentina)
+      </option>
+    
+      <option value="/eu/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        euskara
+      </option>
+    
+      <option value="/fa_IR/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        فارسی (ایران)
+      </option>
+    
+      <option value="/gl/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        galego
+      </option>
+    
+      <option value="/he/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        עברית
+      </option>
+    
+      <option value="/hr/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        hrvatski
+      </option>
+    
+      <option value="/id/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        Indonesia
+      </option>
+    
+      <option value="/is/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        íslenska
+      </option>
+    
+      <option value="/km/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        ខ្មែរ
+      </option>
+    
+      <option value="/lt/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        lietuvių
+      </option>
+    
+      <option value="/mk/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        македонски
+      </option>
+    
+      <option value="/mn_MN/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        монгол (Монгол)
+      </option>
+    
+      <option value="/my_MM/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        မြန်မာ (မြန်မာ)
+      </option>
+    
+      <option value="/nb_NO/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        norsk bokmål (Norge)
+      </option>
+    
+      <option value="/ne/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        नेपाली
+      </option>
+    
+      <option value="/pt_PT/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        português (Portugal)
+      </option>
+    
+      <option value="/ro/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        română
+      </option>
+    
+      <option value="/sq/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        shqip
+      </option>
+    
+      <option value="/sr_Latn/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        srpski (latinica)
+      </option>
+    
+      <option value="/th/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        ไทย
+      </option>
+    
+      <option value="/tl/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        Filipino (Pilipinas)
+      </option>
+    
+      <option value="/tr/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        Türkçe
+      </option>
+    
+      <option value="/uk/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        українська
+      </option>
+    
+      <option value="/uk_UA/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        українська (Україна)
+      </option>
+    
+      <option value="/vi/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        Tiếng Việt
+      </option>
+    
+      <option value="/zh_Hans_CN/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        中文 (简体, 中国)
+      </option>
+    
+      <option value="/zh_Hant_TW/dataset/311-service-requests/resource/30022137-709d-465e-baae-ca155b51927d" >
+        中文 (繁體, 台灣)
+      </option>
+    
+  </select>
+  <button class="btn btn-default js-hide" type="submit">Go</button>
+</form>
+      
+    </div>
+  </div>
+
+  </div>
+
+  
+    
+  
+</footer>
+    
+  
+</div>
+    
+  
+  
+  
+    
+  
+  
+    
+    
+    
+        
+        
+        <div class="js-hide" data-module="google-analytics"
+             data-module-googleanalytics_resource_prefix="/downloads/">
+        </div>
+    
+
+
+    
+        
+        
+        
+    
+
+
+      
+
+    
+    
+    
+    <script src="/webassets/vendor/d8ae4bed_jquery.js" type="text/javascript"></script>
+<script src="/webassets/vendor/bfa47fa0_vendor.js" type="text/javascript"></script>
+<script src="/webassets/vendor/580fa18d_bootstrap.js" type="text/javascript"></script>
+<script src="/webassets/base/15a18f6c_main.js" type="text/javascript"></script>
+<script src="/webassets/opengov_custom_theme_resource/20c99d92_main.js" type="text/javascript"></script>
+<script src="/webassets/bostonma_theme_resource/e0d7dbc4_main.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-harvest/792721b1_harvest_js.js" type="text/javascript"></script>
+<script src="/webassets/showcase/8a16b2b1_slick.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-featuredviews/b38ac308_featured.js" type="text/javascript"></script>
+<script src="/webassets/vendor/5897614f_qs.js" type="text/javascript"></script>
+<script src="/webassets/base/b2821890_view-filters.js" type="text/javascript"></script>
+<script src="/webassets/base/2448af8b_ckan.js" type="text/javascript"></script>
+<script src="/webassets/base/cd2c0272_tracking.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-googleanalytics/event_tracking.js?71ae8997" type="text/javascript"></script>
+<script src="/webassets/vendor/76d36bbb_fileupload.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-cloudstorage/0cf5be9f_main.js" type="text/javascript"></script>
+  <script>(function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'878a7dfbf8c07a59',t:'MTcxMzg0MDA2MS41NTAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
