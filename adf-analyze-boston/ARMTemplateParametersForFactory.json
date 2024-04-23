@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-analyze-boston"
+		},
+		"blobanalyzeboston_connectionString": {
+			"value": ""
+		},
+		"datalakeanalyzeboston_accountKey": {
+			"value": ""
+		},
+		"datalakeanalyzeboston_properties_typeProperties_url": {
+			"value": "https://datalakeanalyzeboston.dfs.core.windows.net/"
+		}
+	}
+}
